@@ -1,0 +1,24 @@
+{
+  "name": "conventional-commits-tutorial",
+  "version": "1.0.0",
+  "description": "project example for implement githooks and setup conventional commits",
+  "repository": "git@github.com:accezar/conventional-commits-tutorial.git",
+  "author": "Anna Carolina <anna.cezar@madeiramadeira.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.0",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
